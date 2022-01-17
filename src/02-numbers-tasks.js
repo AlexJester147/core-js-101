@@ -1,3 +1,4 @@
+/* eslint-disable no-plusplus */
 /* *******************************************************************************************
  *                                                                                           *
  * Please read the following tutorial before implementing tasks:                              *
@@ -144,7 +145,6 @@ function getLastDigit(value) {
 function parseNumberFromString(value) {
   return +value;
 }
-
 /**
  * Returns a diagonal length of the rectangular parallelepiped given by its sides a,b,c.
  *
@@ -202,7 +202,7 @@ function roundToPowerOfTen(/* num, pow */) {
  *   17 => true
  */
 function isPrime(n) {
-  for (let i = 2; i < n; i + 1) {
+  for (let i = 2; i < n; i++) {
     if (n % i === 0) return false;
   }
   return n > 1;
